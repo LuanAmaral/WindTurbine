@@ -22,3 +22,8 @@ t_sample = 10*60;
 time = 1:t_sample:t_sample*n_sample;
 
 data_series = timeseries(T.Vavg80_m_s_(1:n_sample), time);
+
+%Variables pour HCS
+i = 0;
+D = 0;
+pt_1 = 0;
