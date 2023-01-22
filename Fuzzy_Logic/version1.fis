@@ -1,0 +1,30 @@
+[System]
+Name='version1'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=2
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='input1'
+Range=[0 1]
+NumMFs=2
+MF1='gauche':'gaussmf',[0.5 0]
+MF2='droite':'trimf',[0.2 1 1.8]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=2
+MF1='faible':'gaussmf',[0.17 0]
+MF2='grand':'trimf',[0.2 1 1.8]
+
+[Rules]
+1, 1 (1) : 1
+2, 1 (1) : 1
